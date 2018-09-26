@@ -9,6 +9,7 @@
     "dotenv-expand": "^4.2.0",
     "emotion": "^9.2.10",
     "emotion-theming": "^9.2.9",
+    "foreman": "^3.0.1",
     "history": "^4.7.2",
     "http2": "^3.3.7",
     "moment": "^2.22.2",
@@ -26,12 +27,17 @@
     "typeface-ibm-plex-sans": "^0.0.58",
     "typesafe-actions": "^2.0.4"
   },
+  "main": "main.js",
   "scripts": {
     "start": "react-scripts-parcel start",
     "build": "react-scripts-parcel build",
     "test": "react-scripts-parcel test --env=jsdom",
-    "eject": "react-scripts-parcel eject"
+    "eject": "react-scripts-parcel eject",
+    "electron": "electron .",
+    "electron-dev": "ELECTRON_START_URL=http://localhost:1234 electron .",
+    "dev" : "nf start"
   },
+  "homepage": "./",
   "browserslist": {
     "development": [
       "last 2 chrome versions",
@@ -54,6 +60,7 @@
     "@types/react-router-dom": "^4.3.1",
     "@types/react-router-redux": "^5.0.16",
     "babel-core": "^6.26.3",
+    "electron": "^3.0.0",
     "tslint": "^5.11.0",
     "tslint-config-blvd": "^1.2.1",
     "typescript": "^3.0.3"
